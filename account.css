@@ -36,11 +36,13 @@ body img {
   body .avatar img {
     -o-object-fit: contain;
        object-fit: contain;
-    width: 10rem;
-    margin-left: 10rem;
+    width: 20rem;
+    height: 20rem;
+    margin-left: 5rem;
+    border-radius: 50%;
   }
   body .avatar h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
     font-weight: 600;
     text-transform: capitalize;
@@ -49,6 +51,7 @@ body img {
   }
   body .avatar p {
     font-size: 1.5rem;
+    font-style: italic;
     text-align: center;
     font-weight: 400;
     color: #121212;

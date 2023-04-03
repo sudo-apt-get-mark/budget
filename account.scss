@@ -23,12 +23,14 @@ body {
             
             img {
                 object-fit: contain;
-                width: 10rem;
-                margin-left: 10rem;                
+                width: 20rem;
+                height: 20rem;
+                margin-left: 5rem;       
+                border-radius: 50%;        
             }
 
             h1 {
-                font-size: 2rem;
+                font-size: 2.4rem;
                 text-align: center;
                 font-weight: map-get($fontweight, medium );
                 text-transform: capitalize;
@@ -38,6 +40,7 @@ body {
 
             p {
                 font-size: 1.5rem;
+                font-style: italic;
                 text-align: center;
                 font-weight: map-get($fontweight, regular );
                 color: $dark;
