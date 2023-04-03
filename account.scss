@@ -1,0 +1,89 @@
+@import 'accountResets';
+
+body {
+
+    img {
+        object-fit: contain;
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+
+        .avatar {
+            width: 86%;
+            height: 100%;
+            margin: auto;
+            position: relative;
+            margin-bottom: 4rem;
+            margin-top: 3rem;
+            
+           
+            
+            img {
+                object-fit: contain;
+                width: 10rem;
+                margin-left: 10rem;                
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+                font-weight: map-get($fontweight, medium );
+                text-transform: capitalize;
+                margin: .5rem;
+                color: $dark;
+            }
+
+            p {
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: map-get($fontweight, regular );
+                color: $dark;
+            }
+
+
+
+        }
+
+        .general {
+            width: 100%;
+
+            h1 {
+                font-size: 1.6rem;
+                font-weight: map-get($fontweight, medium );
+                text-transform: capitalize;
+            }
+
+            .pna {
+                width: 80%;
+                margin: auto;
+                background-color: $purple;
+                border-radius: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3rem;
+                padding: .5rem;
+
+                p {
+                    color: $light;
+                    font-size: 1.8rem;
+                    font-weight: map-get($fontweight, medium );
+                    text-transform: capitalize;
+                    padding: .4rem;
+                }
+            }
+
+        }
+
+        .support {
+            margin-top: 3rem;
+            @extend .general
+        }
+
+
+
+    }
+}

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f0e7ff;
+  padding: 1rem;
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  body nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body nav .greetings h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #121212;
+  }
+  body nav .greetings p {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #8e20e1;
+  }
+  body nav img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .hero_content {
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    box-shadow: 0.2rem 0.2rem 0.5rem #121212;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  body .hero_content .content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #121212;
+    padding-bottom: 1rem;
+  }
+  body .hero_content .content p {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  body .transactions {
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  body .transactions h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 1.5rem 0;
+  }
+  body .transactions .messages {
+    width: 100%;
+  }
+  body .transactions .messages .sms {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 0.1rem solid #999999;
+    background: #e5dbf4;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+  }
+  body .transactions .messages .sms p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  body .footer {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0.2rem 0.2rem 0.4rem #121212;
+    background: #f0e7ff;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    z-index: 3;
+    position: fixed;
+  }
+  body .options {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    border-radius: 1rem;
+    border: thin solid #f8f4f4;
+    background: #333333;
+    padding: 1.5rem;
+  }
+  body .options ul li {
+    list-style: none;
+    padding: 1rem 0;
+  }
+  body .options ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  body #options.show {
+    display: block;
+  }
+}/*# sourceMappingURL=styles.css.map */

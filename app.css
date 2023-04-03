@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  font-family: Poppins, sans-serif;
+  background-color: #f0e7ff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 4rem;
+}
+body .container {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 3rem;
+    top: 18rem;
+  }
+  body .container .notification {
+    width: 80%;
+    border-radius: 1rem;
+    border: thin solid #a18cc4;
+    background: #e5dbf4;
+    padding: 0.5rem;
+  }
+  body .container .notification h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #121212;
+    text-transform: capitalize;
+  }
+  body .container .notification p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    color: #121212;
+  }
+  body .container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #8e20e1;
+    text-transform: capitalize;
+    margin: 2rem 0;
+  }
+  body .container .themes {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  body .container .themes button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: thin solid #a18cc4;
+    background: #e5dbf4;
+  }
+}/*# sourceMappingURL=app.css.map */

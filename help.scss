@@ -1,0 +1,36 @@
+@import 'helpResets';
+
+@media screen and (max-width: 600px) {
+    body {
+
+        a {
+            img {
+                margin: .2rem;
+                object-fit: contain;
+                width: 4rem;
+            }
+        }
+
+        .heading {
+            display: flex;
+            width: 40%;
+            margin: auto;
+            margin-top: 3rem;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: map-get($fontweight, medium );
+                color: $purple;
+                text-transform: uppercase;
+            }
+
+            img {
+                object-fit: contain;
+                width: 3rem;
+            }
+        }
+
+
+    }
+}

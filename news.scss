@@ -1,0 +1,106 @@
+@import 'newsResets';
+
+@media screen and (max-width: 600px) {
+    body {
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5rem;
+            
+
+            .greetings {
+                
+
+                h1 {
+                    font-size: 1.7rem;
+                    font-weight: map-get($fontweight, medium );
+                    text-transform: capitalize;
+                    color: $dark;
+
+                }
+
+                p {
+                    font-size: 2.5rem;
+                    font-weight: map-get($fontweight, bold );
+                    text-transform: capitalize;
+                    color: $purple;
+                }
+            }
+
+            img {
+                object-fit: contain;
+                width: 3rem;
+            }
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            margin-top: 5rem;
+
+            .newsHighlight {
+                margin: 2rem 0;
+                border: 1px solid #f0e7ff;
+                background: #ded3ef;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+        }
+
+        .footer {
+            width: 98%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: .2rem .2rem .4rem #121212;
+            background: #f0e7ff;
+            border-radius: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: .5rem;
+            z-index: 3;
+            position: fixed;
+            
+        }
+
+        .options {
+            
+            display: none;
+            position: absolute;
+            top: 4rem;
+            right: 2rem;
+            border-radius: 1rem;
+            border: thin solid #f8f4f4;
+            background: #333333;
+            padding: 1.5rem;
+            
+            ul {
+
+                li {
+                    list-style: none;
+                    padding: 1rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 1.6rem;
+                        font-weight: map-get($fontweight, regular );
+                        text-transform: capitalize;
+                        
+                    }
+                }
+            }
+
+            
+        }
+
+        #options.show{
+            display: block;
+        }
+
+
+    }
+}

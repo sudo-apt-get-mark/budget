@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news.css">
+    <title>news section</title>
+</head>
+<body>
+
+    <nav>
+        <div class="greetings">
+            <h1>good morning</h1>
+            <p>hello there</p>
+        </div>
+
+        <img src="menu.png" alt="menu" id="links">
+    </nav>
+
+    <div class="container">
+
+        <div class="newsHighlight">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit non alias doloribus sed?</p>
+            
+        </div>
+        <div class="newsHighlight">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit non alias doloribus sed?</p>
+            
+        </div>
+        <div class="newsHighlight">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit non alias doloribus sed?</p>
+            
+        </div>
+        <div class="newsHighlight">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit non alias doloribus sed?</p>
+            
+        </div>
+        <div class="newsHighlight">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit non alias doloribus sed?</p>
+            
+        </div>
+        <div class="newsHighlight">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit non alias doloribus sed?</p>
+            
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <a href="index.html">
+            <img src="Home!.png" alt="">
+        </a>
+        <a href="budget.html">
+            <img src="Wallet.png" alt="">
+        </a>
+        <a href="save.html">
+            <img src="Money.png" alt="">
+        </a>
+        <a href="news.html">
+            <img src="NewsActive.png" alt="">
+        </a>
+    </div>
+
+    <div id="options" class="options">
+        <ul>
+            <li><a href="account.html">my account</a></li>
+            <li><a href="gandrewards.html">games and rewards</a></li>
+            <li><a href="donation.html">donations</a></li>
+            <li><a href="help.html">help and support</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const myImage = document.getElementById("links");
+        const myDiv = document.getElementById("options");
+
+        myImage.addEventListener("click", () => {
+        myDiv.classList.add("show");
+        });
+
+        document.addEventListener("click", (event) => {
+        if (!myImage.contains(event.target) && !myDiv.contains(event.target)) {
+        myDiv.classList.remove("show");
+        }
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+@import 'appresets';
+
+body {
+
+    img {
+        object-fit: contain;
+        width: 4rem;
+
+    }
+
+    .container {
+        width: 100%;
+    }
+
+   
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 3rem;
+            top: 18rem;
+
+            .notification {
+                width: 80%;
+                border-radius: 1rem;
+                border: thin solid #a18cc4;
+                background: #e5dbf4;
+                padding: .5rem;
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: map-get($fontweight, bold );
+                    color: $dark;
+                    text-transform: capitalize;
+                    
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: map-get($fontweight, regular );
+                    font-style: italic;
+                    text-transform: capitalize;
+                    color: $dark;
+                }
+
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                font-weight: map-get($fontweight, medium );
+                color: $purple;
+                text-transform: capitalize;
+                margin: 2rem 0;
+            }
+
+            .themes {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                gap: 3rem;
+                margin-top: 3rem;
+
+                button {
+                    font-size: 1.6rem;
+                    font-weight: map-get($fontweight, regular );
+                    text-transform: capitalize;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    border: thin solid #a18cc4;
+                    background: #e5dbf4;
+                }
+            }
+
+
+        }
+    }
+    
+}

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  font-family: Poppins, sans-serif;
+  background-color: #f0e7ff;
+}
+
+body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  body .avatar {
+    width: 86%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+  body .avatar img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 10rem;
+    margin-left: 10rem;
+  }
+  body .avatar h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0.5rem;
+    color: #121212;
+  }
+  body .avatar p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    color: #121212;
+  }
+  body .general, body .support {
+    width: 100%;
+  }
+  body .general h1, body .support h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  body .general .pna, body .support .pna {
+    width: 80%;
+    margin: auto;
+    background-color: #8e20e1;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0.5rem;
+  }
+  body .general .pna p, body .support .pna p {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0.4rem;
+  }
+  body .support {
+    margin-top: 3rem;
+  }
+}/*# sourceMappingURL=account.css.map */

@@ -1,0 +1,44 @@
+@import 'donationResets';
+
+body {
+
+    img {
+        object-fit: contain;
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+
+        .donationContent {
+            width: 90%;
+            margin: auto;
+            margin-top: 8rem;
+
+            .donationLink {
+                width: 100%;
+                border: thin solid #f0e7ff;
+                border-radius: 1rem;
+                background: #ded3ef;
+                padding: .8rem;
+                margin: 2rem 0;
+                
+                h1 {
+                    font-size: 2rem;
+                    font-weight: map-get($fontweight, medium );
+                    text-transform: capitalize;
+                    color: $dark;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: map-get($fontweight, regular );
+                    font-style: italic;
+                    color: $dark;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import 'keypadResets';
+
+@media screen and (max-width: 600px) {
+    body {
+
+        a {
+            img {
+                margin: .2rem;
+                object-fit: contain;
+                width: 4rem;
+            }
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            margin-top: 15rem;
+
+            input {
+                width: 98%;
+                margin: auto;
+                margin: 1rem 0;
+                padding: .5rem;
+                font-size: 2rem;
+                font-weight: map-get($fontweight, medium );
+                border: none;
+                border-bottom: .2rem solid $dark;
+                background: none;
+                outline: none;
+                
+            }
+
+            .numbers {
+                width: 80%;
+                margin: auto;
+                position: absolute;
+                bottom: 6rem;
+                
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 1.2rem 0;
+                    
+
+                    button {
+                        background: #ded3ef;
+                        border: none;
+                        border-radius: 50%;
+                        width: 7rem;
+                        height: 7rem;
+                        font-size: 2rem;
+                        font-weight: map-get($fontweight, medium );
+                    }
+                }
+            }
+
+
+        }
+
+
+
+    }
+}

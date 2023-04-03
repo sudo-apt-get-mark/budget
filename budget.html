@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget.css">
+    <title>Budget</title>
+</head>
+<body>
+
+    <nav>
+        <div class="greetings">
+            <h1>good morning</h1>
+            <p>hello there</p>
+        </div>
+
+        <img id="links" src="../images/menu.png" alt="menu">
+    </nav>
+
+    <div class="budgetDisplay">
+        <div class="heading">
+            <h1>my budget</h1>
+            <img src="../images/Walle.png" alt="wallet">
+        </div>
+        <p>spent 38.8%</p>
+        <p>remaining 60.5%</p>
+        <p>average per day 4%</p>
+    </div>
+    
+    <div class="category">
+        <div class="categoryDetails">
+            <p>meal</p>
+            <p>$435</p>
+        </div>
+        <div class="categoryDetails">
+            <p>meal</p>
+            <p>$435</p>
+        </div>
+        <div class="categoryDetails">
+            <p>meal</p>
+            <p>$435</p>
+        </div>
+        <div class="categoryDetails">
+            <p>meal</p>
+            <p>$435</p>
+        </div>
+    </div>
+
+    <div class="budgetTransactions">
+        <h1>transactions</h1>
+
+        <div class="transactionDetails">
+            <p>makaves andreas</p>
+            <p>$2345</p>
+        </div>
+        <div class="transactionDetails">
+            <p>makaves andreas</p>
+            <p>$2345</p>
+        </div>
+        <div class="transactionDetails">
+            <p>makaves andreas</p>
+            <p>$2345</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="index.html">
+            <img src="../images/Home!.png" alt="">
+        </a>
+        <a href="budget.html">
+            <img src="../images/WalletActive.png" alt="">
+        </a>
+        <a href="save.html">
+            <img src="../images/Money.png" alt="">
+        </a>
+        <a href="news.html">
+            <img src="../images/Newspaper.png" alt="">
+        </a>
+    </div>
+
+    <div id="options" class="options">
+        <ul>
+            <li><a href="account.html">my account</a></li>
+            <li><a href="gandrewards.html">games and rewards</a></li>
+            <li><a href="donation.html">donations</a></li>
+            <li><a href="help.html">help and support</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const myImage = document.getElementById("links");
+        const myDiv = document.getElementById("options");
+
+        myImage.addEventListener("click", () => {
+        myDiv.classList.add("show");
+        });
+
+        document.addEventListener("click", (event) => {
+        if (!myImage.contains(event.target) && !myDiv.contains(event.target)) {
+        myDiv.classList.remove("show");
+        }
+        });
+
+    </script>
+
+</body>
+</html>

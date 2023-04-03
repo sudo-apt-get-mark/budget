@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="save.css">
+    <title>save <section></section></title>
+</head>
+<body>
+    
+    <nav>
+        <div class="greetings">
+            <h1>good morning</h1>
+            <p>hello there</p>
+        </div>
+
+        <img id="links" src="menu.png" alt="menu">
+    </nav>
+
+    <div class="depositWithdraw">
+        <div class="depoWith">
+            <p>deposit</p>
+            <p  id="amount" style="color: #48cc6d;">$5123</p>
+            <button onclick="window.location.href = '../keypad/keypad.html'" style="background-color: #48cc6d;">deposit</button>
+        </div>
+        <div class="depoWith">
+            <p>withdraw</p>
+            <p id="withdraw" style="color: #fd4102;">$5123</p>
+            <button onclick="window.location.href = '../keypadW/keypad.html'" style="background-color: #fd4102;">withdraw</button>
+        </div>
+    </div>
+
+    <div class="savings">
+        <p>savings</p>
+        <p id="amount" style="color: #f0a707;"></p>
+        <button onclick="window.location.href = '../keypadS/keypad.html'">save</button>
+    </div>
+
+  
+    <div class="footer">
+        <a href="">
+            <img src="Home!.png" alt="">
+        </a>
+        <a href="budget.html">
+            <img src="Wallet.png" alt="">
+        </a>
+        <a href="save.html">
+            <img src="MoneyActive.png" alt="">
+        </a>
+        <a href="news.html">
+            <img src="Newspaper.png" alt="">
+        </a>
+    </div>
+
+    <div id="options" class="options">
+        <ul>
+            <li><a href="account.html">my account</a></li>
+            <li><a href="gandrewards.html">games and rewards</a></li>
+            <li><a href="donation.html">donations</a></li>
+            <li><a href="help.html">help and support</a></li>
+            <li><a href=" about.html">about us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const myImage = document.getElementById("links");
+        const myDiv = document.getElementById("options");
+
+        myImage.addEventListener("click", () => {
+        myDiv.classList.add("show");
+        });
+
+        document.addEventListener("click", (event) => {
+        if (!myImage.contains(event.target) && !myDiv.contains(event.target)) {
+        myDiv.classList.remove("show");
+        }
+        });
+
+        // Retrieve the amount from localStorage
+    const amount = localStorage.getItem("amount");
+    
+    // Display the amount on the page
+    const amountElement = document.getElementById('amount');
+    amountElement.innerText = amount;
+
+    </script>
+
+
+</body>
+</html>
