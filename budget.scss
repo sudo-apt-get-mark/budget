@@ -61,7 +61,7 @@
             }
 
             p {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 font-weight: map-get($fontweight, regular );
                 text-transform: capitalize;
                 padding: 1rem 0;
@@ -74,17 +74,17 @@
             margin-top: 4rem;
 
             .categoryDetails {
-                display: flex;
                 width: 100%;
+                display: flex;
                 justify-content: space-between;
                 align-items: center;
                 background: #ded3ef;
-                border-radius: 3rem;
-                margin: 1rem 0;
+                border-radius: 4rem;
+                margin: 1.6rem 0;
 
                 p {
-                    padding: 2rem;
-                    font-size: 1.5rem;
+                    padding: 1.5rem;
+                    font-size: 1.7rem;
                     font-weight: map-get($fontweight, regular );
                     text-transform: capitalize;
                     color: $dark;

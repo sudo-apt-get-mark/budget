@@ -16,6 +16,7 @@
             width: 40%;
             margin: auto;
             margin-top: 3rem;
+            margin-bottom: 3rem;
             justify-content: space-around;
 
             h1 {
@@ -28,6 +29,18 @@
             img {
                 object-fit: contain;
                 width: 3rem;
+            }
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: map-get($fontweight, regular );
+                margin: 2rem 0;
+                color: $dark;
             }
         }
 

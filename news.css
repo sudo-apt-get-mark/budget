@@ -59,16 +59,28 @@ a {
     width: 3rem;
   }
   body .container {
-    width: 90%;
+    width: 98%;
     margin: auto;
     margin-top: 5rem;
   }
   body .container .newsHighlight {
-    margin: 2rem 0;
+    margin: 3rem 0;
     border: 1px solid #f0e7ff;
     background: #ded3ef;
     padding: 1rem;
     border-radius: 1rem;
+  }
+  body .container .newsHighlight h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #121212;
+    padding: 1rem 0;
+    text-transform: uppercase;
+  }
+  body .container .newsHighlight a {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
   }
   body .footer {
     width: 98%;

@@ -1,0 +1,48 @@
+@import 'contactResets';
+
+@media screen and (max-width: 600px) {
+    body {
+        a {
+            img {
+                margin: .2rem;
+                object-fit: contain;
+                width: 4rem;
+            }
+        }
+
+        .heading {
+            display: flex;
+            width: 70%;
+            margin: auto;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: map-get($fontweight, medium );
+                color: $purple;
+                text-transform: uppercase;
+            }
+
+            img {
+                object-fit: contain;
+                width: 3rem;
+            }
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: map-get($fontweight, regular );
+                margin: 2rem 0;
+                color: $dark;
+                text-transform: capitalize;
+            }
+        }
+
+    }
+}

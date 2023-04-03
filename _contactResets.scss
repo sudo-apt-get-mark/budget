@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+    font-family: Poppins, sans-serif;
+    background-color: #f0e7ff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+//colors
+$dark: #121212;
+$light: #ded3ef;
+$red: #fd4102;
+$purple: #8e20e1;
+$green: #48cc6d;
+$yellow: #f0a707;
+
+//font weight
+
+$fontweight: (
+    'regular': 400,
+    'medium': 600,
+    'bold': 800
+);

@@ -11,8 +11,8 @@
     
     <nav>
         <div class="greetings">
-            <h1>good morning</h1>
-            <p>hello there</p>
+            <h1>hello there</h1>
+            <p>john doe</p>
         </div>
 
         <img id="links" src="menu.png" alt="menu">
@@ -21,20 +21,20 @@
     <div class="depositWithdraw">
         <div class="depoWith">
             <p>deposit</p>
-            <p  id="amount" style="color: #48cc6d;">$5123</p>
-            <button onclick="window.location.href = '../keypad/keypad.html'" style="background-color: #48cc6d;">deposit</button>
+            <p style="color: #48cc6d;">$825</p>
+            <button onclick="window.location.href = 'keypad.html'" style="background-color: #48cc6d;">deposit</button>
         </div>
         <div class="depoWith">
             <p>withdraw</p>
-            <p id="withdraw" style="color: #fd4102;">$5123</p>
-            <button onclick="window.location.href = '../keypadW/keypad.html'" style="background-color: #fd4102;">withdraw</button>
+            <p style="color: #fd4102;">$432</p>
+            <button onclick="window.location.href = 'keypad.html'" style="background-color: #fd4102;">withdraw</button>
         </div>
     </div>
 
     <div class="savings">
         <p>savings</p>
-        <p id="amount" style="color: #f0a707;"></p>
-        <button onclick="window.location.href = '../keypadS/keypad.html'">save</button>
+        <p style="color: #f0a707;">$1220</p>
+        <button onclick="window.location.href = 'keypad.html'">save</button>
     </div>
 
   
@@ -77,12 +77,6 @@
         }
         });
 
-        // Retrieve the amount from localStorage
-    const amount = localStorage.getItem("amount");
-    
-    // Display the amount on the page
-    const amountElement = document.getElementById('amount');
-    amountElement.innerText = amount;
 
     </script>
 

@@ -33,6 +33,7 @@ body img {
     border-radius: 1.5rem;
     background: #f0e7ff;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(18, 18, 18, 0.6039215686);
+    padding: 1rem;
   }
   body .displayContent .heading {
     display: flex;

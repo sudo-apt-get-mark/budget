@@ -35,7 +35,7 @@
         }
 
         .hero_content {
-            width: 80%;
+            width: 90%;
             margin: auto;
             margin-top: 4rem;
             margin-bottom: 2rem;
@@ -44,7 +44,7 @@
             align-items: center;
             gap: 2rem;
             flex-wrap: wrap;
-            box-shadow: .2rem .2rem .5rem $dark;
+            box-shadow: .2rem .2rem .4rem $dark;
             border-radius: 1rem;
             padding: 1rem;
 
@@ -56,6 +56,7 @@
                     text-transform: capitalize;
                     color: $dark;
                     padding-bottom: 1rem;
+                    text-align: center;
                     
                 }
 
@@ -63,6 +64,7 @@
                     font-size: 2.5rem;
                     font-weight: map-get($fontweight, bold );
                     text-transform: uppercase;
+                    text-align: center;
                 }
 
             }

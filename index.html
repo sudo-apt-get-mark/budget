@@ -8,11 +8,15 @@
     <title>Budget App Manager</title>
 </head>
 <body>
+
+    <div id="welcomeScreen" class="welcome">
+        <h1>this is ynba</h1>
+    </div>
     
     <nav>
         <div class="greetings">
-            <h1>good morning</h1>
-            <p>hello there</p>
+            <h1>hello there</h1>
+            <p>john doe</p>
         </div>
 
         <img id="links" src="menu.png" alt="menu">
@@ -22,19 +26,19 @@
 
         <div class="content">
             <h1>my balance</h1>
-            <p>$5678</p>
+            <p>$5858</p>
         </div>
         <div class="content">
             <h1>my savings</h1>
-            <p style="color: #8e20e1;">$5437</p>
+            <p style="color: #f0a707;">$1738</p>
         </div>
         <div class="content">
             <h1>income</h1>
-            <p style="color: #48cc6d">$1345</p>
+            <p style="color: #48cc6d">$705</p>
         </div>
         <div class="content">
             <h1>expense</h1>
-            <p style="color: #f1351b">$789</p>
+            <p style="color: #f1351b">$420</p>
         </div>
     </div>
 
@@ -43,46 +47,41 @@
         <div class="messages">
             <a href="message.html">
                 <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
+                    <p>Pauline Anyango</p>
+                    <p>$3400</p>
                 </div>
             </a>
             <a href="message.html">
                 <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
+                    <p>Anthony Mutua</p>
+                    <p>$1456</p>
                 </div>
             </a>
             <a href="message.html">
                 <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
+                    <p>Kelvin Mwangi</p>
+                    <p>$840</p>
                 </div>
             </a>
             <a href="message.html">
                 <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
+                    <p>George Kinyua</p>
+                    <p>$1340</p>
                 </div>
             </a>
             <a href="message.html">
                 <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
+                    <p>Peris Muthoni</p>
+                    <p>$760</p>
                 </div>
             </a>
             <a href="message.html">
                 <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
+                    <p>Jane Mueni</p>
+                    <p>$1874</p>
                 </div>
             </a>
-            <a href="../message/message.html">
-                <div class="sms">
-                    <p>makaves andreas</p>
-                    <p>$340</p>
-                </div>
-            </a>
+            
         </div>
     </div>
 
@@ -111,6 +110,8 @@
         </ul>
     </div>
 
+    
+
     <script>
         const myImage = document.getElementById("links");
         const myDiv = document.getElementById("options");
@@ -124,6 +125,20 @@
         myDiv.classList.remove("show");
         }
         });
+
+
+        const welcomeDiv = document.getElementById('welcomeScreen');
+
+        // Show the div after 2 seconds
+        setTimeout(() => {
+        welcomeDiv.style.display = 'block';
+        }, 1000);
+
+        // Hide the div after 4 seconds
+        setTimeout(() => {
+        welcomeDiv.style.display = 'none';
+        }, 4000);
+
 
     </script>
 

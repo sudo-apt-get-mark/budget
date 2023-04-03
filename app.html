@@ -10,7 +10,7 @@
 <body>
     
     <a href="account.html">
-        <img src="../images/back.png" alt="back">
+        <img src="back.png" alt="back">
     </a>
     
 
@@ -23,10 +23,19 @@
         <h2>themes</h2>
 
         <div class="themes">
-            <button>light theme</button>
-            <button>dark theme</button>
+            <button onclick="lightTheme()">light theme</button>
+            <button onclick="darkTheme()">dark theme</button>
         </div>
     </div>
+
+    <script>
+		function darkTheme() {
+			document.body.style.backgroundColor = "#121212";
+		}
+        function lightTheme() {
+			document.body.style.backgroundColor = "inherit";
+		}
+	</script>
 
 
 

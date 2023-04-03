@@ -47,7 +47,7 @@ a {
        object-fit: contain;
   }
   body .hero_content {
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -56,7 +56,7 @@ a {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    box-shadow: 0.2rem 0.2rem 0.5rem #121212;
+    box-shadow: 0.2rem 0.2rem 0.4rem #121212;
     border-radius: 1rem;
     padding: 1rem;
   }
@@ -66,11 +66,13 @@ a {
     text-transform: capitalize;
     color: #121212;
     padding-bottom: 1rem;
+    text-align: center;
   }
   body .hero_content .content p {
     font-size: 2.5rem;
     font-weight: 800;
     text-transform: uppercase;
+    text-align: center;
   }
   body .transactions {
     width: 90%;
