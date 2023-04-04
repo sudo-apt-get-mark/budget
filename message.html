@@ -13,17 +13,39 @@
         <img src="back.png" alt="back">
     </a>
 
-    <div class="messageDisplay">
+    <div onclick="disappear()" class="messageDisplay">
         <p>RCD0OABSPW Confirmed. Ksh 4,500 sent to Michael Mwaura 0721543896 on 09/12/2022 at 8:30 PM. Transaction cost, Ksh 22.50. New Mpesa balance is Ksh 10,250.00. Transaction cost, Ksh0.00.Amount you can transact within the day is 299,980.00.</p>
     </div>
 
     <div class="buttons">
-        <button onclick="alert('Item has been placed in meal category.')">meal</button>
-        <button onclick="alert('Item has been placed in transport category.')">transport</button>
-        <button onclick="alert('Item has been placed in housing category.')">housing</button>
-        <button onclick="alert('Item has been placed in bills category.')">bills</button>
-        <button onclick="alert('Item has been placed in other expense category.')">other expenses</button>
+        <button id="buttons" onclick="notification()">meal</button>
+        <button id="buttons" onclick="notification()">transport</button>
+        <button id="buttons" onclick="notification()">housing</button>
+        <button id="buttons" onclick="notification()">bills</button>
+        <button id="buttons" onclick="notification()">other expenses</button>
     </div>
+
+    <div class="notification" id="prompt">
+        <h2  > The message has been categorized. </h2>
+    </div>
+
+    <script>
+
+        function notification() {
+            var div = document.getElementById('prompt');
+            div.style.display = "block";
+            div.style.pointerEvents = "none";
+        }
+
+        function disappear() {
+            var dis = document.getElementById('prompt');
+            dis.style.display = "none";
+            div.style.pointerEvents = "none";
+        }
+
+        
+
+    </script>
     
 </body>
 </html>

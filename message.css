@@ -58,4 +58,24 @@ body img {
     background-color: #f0a707;
     border-radius: 1rem;
   }
+  body .notification {
+    width: 80%;
+    margin: auto;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #fff;
+    display: none;
+  }
+  body .notification h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+    opacity: 1;
+  }
 }/*# sourceMappingURL=message.css.map */
